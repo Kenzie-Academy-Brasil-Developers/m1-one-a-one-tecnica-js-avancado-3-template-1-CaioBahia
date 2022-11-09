@@ -22,3 +22,15 @@ const funcionarios = [
         tempoEmpresa: 8,
     },
 ];
+
+function aumentaSalario(arr){
+    for(i=0;i<arr.length;i++){
+        if(arr[i].departamento === "Financeiro"){
+            arr[i].salario = arr[i].salario + 500
+        }
+    }
+    return funcionarios
+}
+
+aumentaSalario(funcionarios)
+console.log(funcionarios)
